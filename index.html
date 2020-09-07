@@ -12,23 +12,104 @@
         .is-primary{
             background-color: #aa0000 !important;
         }
+        .ttt-section{
+            width: 80vw;
+            margin: 1.5rem 10vw;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+        }
+
+        .ttt-section .ttt-column{
+            display: flex;
+            align-items: center;
+        }
+
+        .ttt-section .ttt-column.ttt-column-wide{
+            width: 66%;
+            min-width: 300px;
+        }
+        .is-youtube{
+            background-color: #ff0000;
+            color: #ffffff;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .is-youtube svg{
+            width: 1rem;
+            margin-right: 1rem;
+        }
+
+        .is-youtube:hover svg path{
+            fill: black;
+        }
+        .is-triptych{
+            flex-wrap: wrap;
+        }
+        .is-triptych .column{
+            display: flex;
+            justify-content: center;
+        }
+        .message.is-ttt .message-body{
+            border-color: #4a7a02 !important;
+            color: #4a7a02 !important;
+            font-size: 1.25rem;
+        }
+        .is-hero-image{
+            width: 256px;
+        }
     </style>
 </head>
 <body>
 <div class="container is-fluid">
-    <div class="level">
-        <figure class="image is-128x128">
-            <img src="//techy-teacher-talk-logo.png" alt="Apple on a laptop screen for Techy Teacher Talk logo">
+    <!-- HEADER LOGO CENTER -->
+    <div class="ttt-section">
+        <figure class="image is-hero-image">
+            <a href="/">
+                <img src="https://techyteachertalk.com/techy-teacher-talk-logo.png" alt="Apple on a laptop screen for Techy Teacher Talk logo">
+            </a>
         </figure>
     </div>
-    <!-- HEADER LOGO CENTER -->
 
     <!-- ABOUT BETHANY -->
-
+    <div class="ttt-section">
+        <div class="ttt-column">
+            <figure class="image is-128x128">
+                <img src="https://techyteachertalk.com/Bethany_sharp.jpg" alt="Bethany Sharp is a passionate educator">
+            </figure>
+        </div>
+        <div class="ttt-column ttt-column-wide">
+            <article class="message is-ttt">
+                <div class="message-body">
+                    Bethany Sharp is a Memphis City School teacher with a passion for helping others and technology. She received a Master's from University of Jackson and her bachelors from the University of Memphis. She started Techy Teacher Talk to help students and teachers struggling with the challenges of remote learning.
+                </div>
+            </article>
+        </div>
+    </div>
     <!-- yOUTUBE CHANNEL LINK -->
-
+    <div class="ttt-section">
+        <a href="https://www.youtube.com/channel/UCWO-iFYYDP9L80Q8hWX7Rag">
+            <button class="button is-youtube">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0,0 100,50 0,100" fill="white"/>
+                </svg>
+                Techy Teacher Talk YouTube
+            </button>
+        </a>
+    </div>
     <!-- YOUTUBE EMBEDS-->
-
+    <div class="columns is-triptych">
+        <div class="column">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7BMjvBSqg3c?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="column">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NwTc4irlH3Y?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="column">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SGxls9KDlzg?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
     <!-- FOOTER -->
 </div>
 <footer class="footer">
